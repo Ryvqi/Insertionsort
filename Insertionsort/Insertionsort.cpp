@@ -27,6 +27,35 @@ void input() {
 	for (int i = 0; i < n; i++)
 	{
 		cout << "Data ke-" << (i + 1) << ": ";
+		cin >> arr[i];
+	}
+}
+
+void insertionsort() {
+
+	int temp;
+	int j;
+
+	for (int i = 1; i < n; i++) {
+
+		temp = arr[i];
+
+		j = i - 1;
+
+		while (j >= 0 && arr[j] > temp)
+
+		{
+			arr[j + i] = arr[j];
+			j--;
+		}
+
+		arr[j + i] = temp;
+
+
+		cout << "\nPass " << i << ": ";
+		for (int k = 0; k < n; k++) {
+
+		}
 	}
 }
 int main()
